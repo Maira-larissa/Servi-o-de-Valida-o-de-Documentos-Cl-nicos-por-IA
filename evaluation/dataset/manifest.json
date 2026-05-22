@@ -1,0 +1,222 @@
+[
+  {
+    "filename": "laudo_hemograma_01.pdf",
+    "category": "valid",
+    "ground_truth_label": "laudo",
+    "ground_truth_is_valid": true,
+    "notes": ""
+  },
+  {
+    "filename": "receita_medica_01.pdf",
+    "category": "valid",
+    "ground_truth_label": "receita",
+    "ground_truth_is_valid": true,
+    "notes": ""
+  },
+  {
+    "filename": "atestado_medico_01.pdf",
+    "category": "valid",
+    "ground_truth_label": "atestado",
+    "ground_truth_is_valid": true,
+    "notes": ""
+  },
+  {
+    "filename": "laudo_tomografia_01.pdf",
+    "category": "valid",
+    "ground_truth_label": "exame_imagem",
+    "ground_truth_is_valid": true,
+    "notes": ""
+  },
+  {
+    "filename": "relatorio_medico_01.pdf",
+    "category": "valid",
+    "ground_truth_label": "relatorio_medico",
+    "ground_truth_is_valid": true,
+    "notes": ""
+  },
+  {
+    "filename": "laudo_ecg_01.pdf",
+    "category": "valid",
+    "ground_truth_label": "laudo",
+    "ground_truth_is_valid": true,
+    "notes": ""
+  },
+  {
+    "filename": "resultado_glicemia_01.pdf",
+    "category": "valid",
+    "ground_truth_label": "laudo",
+    "ground_truth_is_valid": true,
+    "notes": ""
+  },
+  {
+    "filename": "prescricao_psiquiatria_01.pdf",
+    "category": "valid",
+    "ground_truth_label": "receita",
+    "ground_truth_is_valid": true,
+    "notes": ""
+  },
+  {
+    "filename": "laudo_ultrassom_01.pdf",
+    "category": "valid",
+    "ground_truth_label": "exame_imagem",
+    "ground_truth_is_valid": true,
+    "notes": ""
+  },
+  {
+    "filename": "encaminhamento_aps_01.pdf",
+    "category": "valid",
+    "ground_truth_label": "relatorio_medico",
+    "ground_truth_is_valid": true,
+    "notes": ""
+  },
+  {
+    "filename": "nota_fiscal_01.pdf",
+    "category": "invalid",
+    "ground_truth_label": "fatura",
+    "ground_truth_is_valid": false,
+    "notes": ""
+  },
+  {
+    "filename": "contrato_locacao_01.pdf",
+    "category": "invalid",
+    "ground_truth_label": "contrato",
+    "ground_truth_is_valid": false,
+    "notes": ""
+  },
+  {
+    "filename": "fatura_energia_01.pdf",
+    "category": "invalid",
+    "ground_truth_label": "fatura",
+    "ground_truth_is_valid": false,
+    "notes": ""
+  },
+  {
+    "filename": "boleto_bancario_01.pdf",
+    "category": "invalid",
+    "ground_truth_label": "fatura",
+    "ground_truth_is_valid": false,
+    "notes": ""
+  },
+  {
+    "filename": "print_whatsapp_01.pdf",
+    "category": "invalid",
+    "ground_truth_label": "print_tela",
+    "ground_truth_is_valid": false,
+    "notes": ""
+  },
+  {
+    "filename": "curriculo_01.pdf",
+    "category": "invalid",
+    "ground_truth_label": "desconhecido",
+    "ground_truth_is_valid": false,
+    "notes": ""
+  },
+  {
+    "filename": "cardapio_restaurante_01.pdf",
+    "category": "invalid",
+    "ground_truth_label": "desconhecido",
+    "ground_truth_is_valid": false,
+    "notes": ""
+  },
+  {
+    "filename": "proposta_comercial_01.pdf",
+    "category": "invalid",
+    "ground_truth_label": "contrato",
+    "ground_truth_is_valid": false,
+    "notes": ""
+  },
+  {
+    "filename": "comprovante_residencia_01.pdf",
+    "category": "invalid",
+    "ground_truth_label": "desconhecido",
+    "ground_truth_is_valid": false,
+    "notes": ""
+  },
+  {
+    "filename": "manual_produto_01.pdf",
+    "category": "invalid",
+    "ground_truth_label": "desconhecido",
+    "ground_truth_is_valid": false,
+    "notes": ""
+  },
+  {
+    "filename": "ambig_artigo_saude_01.pdf",
+    "category": "ambiguous",
+    "ground_truth_label": "desconhecido",
+    "ground_truth_is_valid": false,
+    "notes": "Caso ambíguo: menciona termos clínicos (hipertensão, infarto, Losartana, cardiologista, diagnóstico) mas é texto jornalístico. Nosso classificador tende a aceitar erroneamente. Limitação conhecida: sem modelo de contexto, não distingue 'texto sobre medicina' de 'documento médico'."
+  },
+  {
+    "filename": "ambig_atestado_manuscrito_01.pdf",
+    "category": "ambiguous",
+    "ground_truth_label": "atestado",
+    "ground_truth_is_valid": true,
+    "notes": "OCR de atestado manuscrito degrada a qualidade do texto. Sem acentos, sem pontuação, CRM parcialmente ilegível. Nosso classificador pode rejeitar por score baixo."
+  },
+  {
+    "filename": "ambig_exame_veterinario_01.pdf",
+    "category": "ambiguous",
+    "ground_truth_label": "desconhecido",
+    "ground_truth_is_valid": false,
+    "notes": "Exame veterinário tem estrutura idêntica ao humano: hemograma, leucócitos, eritrócitos, assinatura com registro profissional. Diferença: CRMV (veterinário) vs CRM (humano). Nosso classificador não distingue — limitação séria em contexto de saúde humana."
+  },
+  {
+    "filename": "ambig_declaracao_comparecimento_01.pdf",
+    "category": "ambiguous",
+    "ground_truth_label": "desconhecido",
+    "ground_truth_is_valid": false,
+    "notes": "Não é um documento clínico (sem diagnóstico, sem prescrição), mas tem elementos de UBS, unidade de saúde. Expectativa: rejeitar (is_valid=False), mas pode ser aceito pelo score."
+  },
+  {
+    "filename": "ambig_receita_sem_crm_01.pdf",
+    "category": "ambiguous",
+    "ground_truth_label": "receita",
+    "ground_truth_is_valid": true,
+    "notes": "Receita sem CRM visível, sem carimbo, sem CID. Pode ser receita de UBS onde o médico esqueceu de assinar corretamente. Em produção: deveria ser rejeitada por incompletude. Nosso classificador aceita por ter termos clínicos suficientes."
+  },
+  {
+    "filename": "ambig_laudo_espanhol_01.pdf",
+    "category": "ambiguous",
+    "ground_truth_label": "laudo",
+    "ground_truth_is_valid": true,
+    "notes": "Laudo em espanhol. Termos similares ao português (eritrocitos/eritrócitos). OCR pode confundir algumas palavras. Nosso vocabulário em português pode não capturar bem termos espanhóis."
+  },
+  {
+    "filename": "ambig_relatorio_nutricional_01.pdf",
+    "category": "ambiguous",
+    "ground_truth_label": "relatorio_medico",
+    "ground_truth_is_valid": true,
+    "notes": "Relatório nutricional tem CRN (nutricionista) não CRM. É documento clínico para fins da teleconsultoria? Depende da política do sistema. Nosso classificador aceita."
+  },
+  {
+    "filename": "ambig_foto_monitor_01.pdf",
+    "category": "ambiguous",
+    "ground_truth_label": "laudo",
+    "ground_truth_is_valid": true,
+    "notes": "OCR de foto de monitor: qualidade degradada, pixels de tela visíveis. O conteúdo é clínico, mas a forma de envio (foto do monitor) é tecnicamente inaceitável em contexto de teleconsultoria real. Nosso sistema aceita o conteúdo sem avaliar a forma — limitação importante."
+  },
+  {
+    "filename": "ambig_texto_minimo_01.pdf",
+    "category": "ambiguous",
+    "ground_truth_label": "desconhecido",
+    "ground_truth_is_valid": false,
+    "notes": "Texto extremamente curto (possível extração parcial de PDF mal formatado). Tem termos clínicos e CRM, mas sem contexto suficiente. Nosso sistema rejeita por word_count < 30, aplicando threshold mais alto."
+  },
+  {
+    "filename": "ambig_formulario_sus_01.pdf",
+    "category": "ambiguous",
+    "ground_truth_label": "relatorio_medico",
+    "ground_truth_is_valid": true,
+    "notes": "Formulário administrativo do SUS com conteúdo clínico. Deve ser aceito (é parte do fluxo de teleconsultoria). Nosso classificador aceita corretamente — bom desempenho neste caso."
+  },
+{
+    "filename": "ambig_formulario_sus_01.pdf",
+    "ground_truth_is_valid": true,
+    "category": "ambiguous"
+  },
+  {
+    "filename": "documento_teste_extra.pdf",
+    "ground_truth_is_valid": true,
+    "category": "valid"
+  }
+]
