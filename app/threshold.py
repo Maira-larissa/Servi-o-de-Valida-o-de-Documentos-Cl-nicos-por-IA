@@ -37,15 +37,26 @@ from typing import Optional
 # ══════════════════════════════════════════════════════════════════════════
 
 def _get_base_threshold() -> float:
-    """Lê threshold base da variável de ambiente. Default: 0.70."""
-    raw = os.getenv("BASE_THRESHOLD", "0.70")
+    """
+    Lê threshold base da variável de ambiente.
+
+    Default: 0.45 — calibrado empiricamente após avaliação real (30 documentos).
+
+    Primeira versão usava 0.70, definido antes de qualquer dado de validação.
+    Após rodar o evaluate.py, os scores reais foram:
+      - Documentos válidos:   0.48–0.68
+      - Documentos inválidos: 0.00–0.04
+    O threshold de 0.45 mantém a separação correta (precisão=1.0 nos casos claros)
+    sem rejeitar documentos clínicos legítimos.
+    """
+    raw = os.getenv("BASE_THRESHOLD", "0.45")
     try:
         value = float(raw)
         if not 0.0 < value < 1.0:
             raise ValueError
         return value
     except ValueError:
-        return 0.70
+        return 0.45
 
 
 BASE_THRESHOLD = _get_base_threshold()

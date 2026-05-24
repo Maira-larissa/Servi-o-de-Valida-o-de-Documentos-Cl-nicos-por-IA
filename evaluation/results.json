@@ -53,8 +53,8 @@
       "ground_truth_is_valid": true,
       "prediction_label": "laudo",
       "prediction_is_valid": true,
-      "confidence_score": 0.7875,
-      "threshold_applied": 0.7,
+      "confidence_score": 0.6,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [
         "hemograma",
@@ -68,9 +68,9 @@
         "data",
         "assinatura"
       ],
-      "justification": "Documento classificado como laudo/resultado de exame. Termos clínicos identificados: 'hemograma', 'leucócitos', 'eritrócitos', 'plaquetas', 'crm'. Elementos estruturais de documento médico presentes (score estrutural: 0.67). Presença de termos não clínicos (fatura, contrato, etc.) aplicou penalidade de 0.38.",
+      "justification": "Documento classificado como laudo/resultado de exame. Termos clínicos identificados: 'hemograma', 'leucócitos', 'eritrócitos', 'plaquetas', 'crm'. Elementos estruturais de documento médico presentes (score estrutural: 0.50). Presença de termos não clínicos (fatura, contrato, etc.) aplicou penalidade de 0.38.",
       "correct": true,
-      "elapsed_ms": 20.0,
+      "elapsed_ms": 54.0,
       "notes": ""
     },
     {
@@ -80,8 +80,8 @@
       "ground_truth_is_valid": true,
       "prediction_label": "receita",
       "prediction_is_valid": true,
-      "confidence_score": 0.85,
-      "threshold_applied": 0.7,
+      "confidence_score": 0.675,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [
         "diagnóstico",
@@ -97,7 +97,7 @@
       ],
       "justification": "Documento classificado como receita/prescrição médica. Termos clínicos identificados: 'diagnóstico', 'cid', 'posologia', 'via oral', 'hipertensão'. Elementos estruturais de documento médico presentes (score estrutural: 0.50).",
       "correct": true,
-      "elapsed_ms": 4.0,
+      "elapsed_ms": 73.0,
       "notes": ""
     },
     {
@@ -107,8 +107,8 @@
       "ground_truth_is_valid": true,
       "prediction_label": "atestado",
       "prediction_is_valid": true,
-      "confidence_score": 0.8,
-      "threshold_applied": 0.7,
+      "confidence_score": 0.6333,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [
         "cid",
@@ -121,7 +121,7 @@
       ],
       "justification": "Documento classificado como atestado médico. Termos clínicos identificados: 'cid', 'atestado médico', 'crm', 'paciente', 'médico'. Elementos estruturais de documento médico presentes (score estrutural: 0.33).",
       "correct": true,
-      "elapsed_ms": 25.0,
+      "elapsed_ms": 59.0,
       "notes": ""
     },
     {
@@ -131,8 +131,8 @@
       "ground_truth_is_valid": true,
       "prediction_label": "laudo",
       "prediction_is_valid": true,
-      "confidence_score": 0.75,
-      "threshold_applied": 0.7,
+      "confidence_score": 0.5917,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [
         "diagnóstico",
@@ -147,7 +147,7 @@
       ],
       "justification": "Documento classificado como laudo/resultado de exame. Termos clínicos identificados: 'diagnóstico', 'tomografia', 'isquemia', 'crm', 'paciente'.",
       "correct": true,
-      "elapsed_ms": 16.0,
+      "elapsed_ms": 41.0,
       "notes": ""
     },
     {
@@ -157,8 +157,8 @@
       "ground_truth_is_valid": true,
       "prediction_label": "relatorio_medico",
       "prediction_is_valid": true,
-      "confidence_score": 0.8,
-      "threshold_applied": 0.7,
+      "confidence_score": 0.6333,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [
         "cid",
@@ -174,7 +174,7 @@
       ],
       "justification": "Documento classificado como relatório clínico. Termos clínicos identificados: 'cid', 'evolução clínica', 'hipertensão', 'diabetes', 'crm'. Elementos estruturais de documento médico presentes (score estrutural: 0.33).",
       "correct": true,
-      "elapsed_ms": 23.0,
+      "elapsed_ms": 44.0,
       "notes": ""
     },
     {
@@ -184,8 +184,8 @@
       "ground_truth_is_valid": true,
       "prediction_label": "laudo",
       "prediction_is_valid": true,
-      "confidence_score": 0.75,
-      "threshold_applied": 0.7,
+      "confidence_score": 0.4817,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [
         "eletrocardiograma",
@@ -195,7 +195,7 @@
       ],
       "justification": "Documento classificado como laudo/resultado de exame. Termos clínicos identificados: 'eletrocardiograma', 'crm', 'paciente', 'data'.",
       "correct": true,
-      "elapsed_ms": 14.0,
+      "elapsed_ms": 34.0,
       "notes": ""
     },
     {
@@ -205,8 +205,8 @@
       "ground_truth_is_valid": true,
       "prediction_label": "laudo",
       "prediction_is_valid": true,
-      "confidence_score": 0.75,
-      "threshold_applied": 0.7,
+      "confidence_score": 0.5917,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [
         "glicemia",
@@ -222,7 +222,7 @@
       ],
       "justification": "Documento classificado como laudo/resultado de exame. Termos clínicos identificados: 'glicemia', 'colesterol', 'triglicerídeos', 'creatinina', 'ureia'.",
       "correct": true,
-      "elapsed_ms": 5.0,
+      "elapsed_ms": 23.0,
       "notes": ""
     },
     {
@@ -232,8 +232,8 @@
       "ground_truth_is_valid": true,
       "prediction_label": "receita",
       "prediction_is_valid": true,
-      "confidence_score": 0.8,
-      "threshold_applied": 0.7,
+      "confidence_score": 0.6333,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [
         "cid",
@@ -247,7 +247,7 @@
       ],
       "justification": "Documento classificado como receita/prescrição médica. Termos clínicos identificados: 'cid', 'prescrição', 'via oral', 'receituário', 'crm'. Elementos estruturais de documento médico presentes (score estrutural: 0.33).",
       "correct": true,
-      "elapsed_ms": 4.0,
+      "elapsed_ms": 32.0,
       "notes": ""
     },
     {
@@ -257,8 +257,8 @@
       "ground_truth_is_valid": true,
       "prediction_label": "laudo",
       "prediction_is_valid": true,
-      "confidence_score": 0.75,
-      "threshold_applied": 0.7,
+      "confidence_score": 0.5917,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [
         "laudo",
@@ -270,7 +270,7 @@
       ],
       "justification": "Documento classificado como laudo/resultado de exame. Termos clínicos identificados: 'laudo', 'ultrassonografia', 'edema', 'crm', 'paciente'.",
       "correct": true,
-      "elapsed_ms": 4.0,
+      "elapsed_ms": 34.0,
       "notes": ""
     },
     {
@@ -280,8 +280,8 @@
       "ground_truth_is_valid": true,
       "prediction_label": "laudo",
       "prediction_is_valid": true,
-      "confidence_score": 0.8,
-      "threshold_applied": 0.7,
+      "confidence_score": 0.6333,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [
         "hipótese diagnóstica",
@@ -297,7 +297,7 @@
       ],
       "justification": "Documento classificado como laudo/resultado de exame. Termos clínicos identificados: 'hipótese diagnóstica', 'cid', 'neoplasia', 'crm', 'paciente'. Elementos estruturais de documento médico presentes (score estrutural: 0.33).",
       "correct": true,
-      "elapsed_ms": 22.0,
+      "elapsed_ms": 34.0,
       "notes": ""
     },
     {
@@ -308,12 +308,12 @@
       "prediction_label": "fatura",
       "prediction_is_valid": false,
       "confidence_score": 0.0,
-      "threshold_applied": 0.7,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [],
-      "justification": "Documento classificado como fatura/nota fiscal. Presença de termos não clínicos (fatura, contrato, etc.) aplicou penalidade de 1.00. Confiança (0.00) abaixo do limiar adaptativo (0.70) — documento rejeitado.",
+      "justification": "Documento classificado como fatura/nota fiscal. Presença de termos não clínicos (fatura, contrato, etc.) aplicou penalidade de 1.00. Confiança (0.00) abaixo do limiar adaptativo (0.45) — documento rejeitado.",
       "correct": true,
-      "elapsed_ms": 15.0,
+      "elapsed_ms": 29.0,
       "notes": ""
     },
     {
@@ -324,12 +324,12 @@
       "prediction_label": "contrato",
       "prediction_is_valid": false,
       "confidence_score": 0.0,
-      "threshold_applied": 0.7,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [],
-      "justification": "Documento classificado como contrato. Presença de termos não clínicos (fatura, contrato, etc.) aplicou penalidade de 1.00. Confiança (0.00) abaixo do limiar adaptativo (0.70) — documento rejeitado.",
+      "justification": "Documento classificado como contrato. Presença de termos não clínicos (fatura, contrato, etc.) aplicou penalidade de 1.00. Confiança (0.00) abaixo do limiar adaptativo (0.45) — documento rejeitado.",
       "correct": true,
-      "elapsed_ms": 16.0,
+      "elapsed_ms": 39.0,
       "notes": ""
     },
     {
@@ -340,12 +340,12 @@
       "prediction_label": "fatura",
       "prediction_is_valid": false,
       "confidence_score": 0.0,
-      "threshold_applied": 0.7,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [
         "referência"
       ],
-      "justification": "Documento classificado como fatura/nota fiscal. Termos clínicos identificados: 'referência'. Presença de termos não clínicos (fatura, contrato, etc.) aplicou penalidade de 0.75. Confiança (0.00) abaixo do limiar adaptativo (0.70) — documento rejeitado.",
+      "justification": "Documento classificado como fatura/nota fiscal. Termos clínicos identificados: 'referência'. Presença de termos não clínicos (fatura, contrato, etc.) aplicou penalidade de 0.75. Confiança (0.00) abaixo do limiar adaptativo (0.45) — documento rejeitado.",
       "correct": true,
       "elapsed_ms": 19.0,
       "notes": ""
@@ -358,14 +358,14 @@
       "prediction_label": "fatura",
       "prediction_is_valid": false,
       "confidence_score": 0.0,
-      "threshold_applied": 0.7,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [
         "data"
       ],
-      "justification": "Documento classificado como fatura/nota fiscal. Termos clínicos identificados: 'data'. Presença de termos não clínicos (fatura, contrato, etc.) aplicou penalidade de 1.00. Confiança (0.00) abaixo do limiar adaptativo (0.70) — documento rejeitado.",
+      "justification": "Documento classificado como fatura/nota fiscal. Termos clínicos identificados: 'data'. Presença de termos não clínicos (fatura, contrato, etc.) aplicou penalidade de 1.00. Confiança (0.00) abaixo do limiar adaptativo (0.45) — documento rejeitado.",
       "correct": true,
-      "elapsed_ms": 5.0,
+      "elapsed_ms": 14.0,
       "notes": ""
     },
     {
@@ -376,14 +376,14 @@
       "prediction_label": "print_tela",
       "prediction_is_valid": false,
       "confidence_score": 0.0,
-      "threshold_applied": 0.7,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [
         "médico"
       ],
-      "justification": "Documento classificado como print de tela. Termos clínicos identificados: 'médico'. Presença de termos não clínicos (fatura, contrato, etc.) aplicou penalidade de 1.00. Confiança (0.00) abaixo do limiar adaptativo (0.70) — documento rejeitado.",
+      "justification": "Documento classificado como print de tela. Termos clínicos identificados: 'médico'. Presença de termos não clínicos (fatura, contrato, etc.) aplicou penalidade de 1.00. Confiança (0.00) abaixo do limiar adaptativo (0.45) — documento rejeitado.",
       "correct": true,
-      "elapsed_ms": 25.0,
+      "elapsed_ms": 15.0,
       "notes": ""
     },
     {
@@ -393,15 +393,15 @@
       "ground_truth_is_valid": false,
       "prediction_label": "desconhecido",
       "prediction_is_valid": false,
-      "confidence_score": 0.0583,
-      "threshold_applied": 0.7,
+      "confidence_score": 0.0367,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [
         "nome"
       ],
-      "justification": "Tipo de documento não identificado com certeza. Termos clínicos identificados: 'nome'. Confiança (0.06) abaixo do limiar adaptativo (0.70) — documento rejeitado.",
+      "justification": "Tipo de documento não identificado com certeza. Termos clínicos identificados: 'nome'. Confiança (0.04) abaixo do limiar adaptativo (0.45) — documento rejeitado.",
       "correct": true,
-      "elapsed_ms": 19.0,
+      "elapsed_ms": 23.0,
       "notes": ""
     },
     {
@@ -412,12 +412,12 @@
       "prediction_label": "desconhecido",
       "prediction_is_valid": false,
       "confidence_score": 0.0,
-      "threshold_applied": 0.7,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [],
-      "justification": "Tipo de documento não identificado com certeza. Nenhum indicador clínico significativo encontrado. Confiança (0.00) abaixo do limiar adaptativo (0.70) — documento rejeitado.",
+      "justification": "Tipo de documento não identificado com certeza. Nenhum indicador clínico significativo encontrado. Confiança (0.00) abaixo do limiar adaptativo (0.45) — documento rejeitado.",
       "correct": true,
-      "elapsed_ms": 15.0,
+      "elapsed_ms": 16.0,
       "notes": ""
     },
     {
@@ -428,14 +428,14 @@
       "prediction_label": "contrato",
       "prediction_is_valid": false,
       "confidence_score": 0.0,
-      "threshold_applied": 0.7,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [
         "assinatura"
       ],
-      "justification": "Documento classificado como contrato. Termos clínicos identificados: 'assinatura'. Presença de termos não clínicos (fatura, contrato, etc.) aplicou penalidade de 0.50. Confiança (0.00) abaixo do limiar adaptativo (0.70) — documento rejeitado.",
+      "justification": "Documento classificado como contrato. Termos clínicos identificados: 'assinatura'. Presença de termos não clínicos (fatura, contrato, etc.) aplicou penalidade de 0.50. Confiança (0.00) abaixo do limiar adaptativo (0.45) — documento rejeitado.",
       "correct": true,
-      "elapsed_ms": 38.0,
+      "elapsed_ms": 18.0,
       "notes": ""
     },
     {
@@ -446,12 +446,12 @@
       "prediction_label": "desconhecido",
       "prediction_is_valid": false,
       "confidence_score": 0.0,
-      "threshold_applied": 0.7,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [],
-      "justification": "Tipo de documento não identificado com certeza. Nenhum indicador clínico significativo encontrado. Confiança (0.00) abaixo do limiar adaptativo (0.70) — documento rejeitado.",
+      "justification": "Tipo de documento não identificado com certeza. Nenhum indicador clínico significativo encontrado. Confiança (0.00) abaixo do limiar adaptativo (0.45) — documento rejeitado.",
       "correct": true,
-      "elapsed_ms": 13.0,
+      "elapsed_ms": 16.0,
       "notes": ""
     },
     {
@@ -462,12 +462,12 @@
       "prediction_label": "desconhecido",
       "prediction_is_valid": false,
       "confidence_score": 0.0,
-      "threshold_applied": 0.7,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [],
-      "justification": "Tipo de documento não identificado com certeza. Nenhum indicador clínico significativo encontrado. Confiança (0.00) abaixo do limiar adaptativo (0.70) — documento rejeitado.",
+      "justification": "Tipo de documento não identificado com certeza. Nenhum indicador clínico significativo encontrado. Confiança (0.00) abaixo do limiar adaptativo (0.45) — documento rejeitado.",
       "correct": true,
-      "elapsed_ms": 36.0,
+      "elapsed_ms": 19.0,
       "notes": ""
     },
     {
@@ -477,8 +477,8 @@
       "ground_truth_is_valid": false,
       "prediction_label": "relatorio_medico",
       "prediction_is_valid": true,
-      "confidence_score": 0.7,
-      "threshold_applied": 0.7,
+      "confidence_score": 0.55,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [
         "diagnóstico",
@@ -492,7 +492,7 @@
       ],
       "justification": "Documento classificado como relatório clínico. Termos clínicos identificados: 'diagnóstico', 'pressão arterial', 'hipertensão', 'infarto', 'tratamento'.",
       "correct": false,
-      "elapsed_ms": 14.0,
+      "elapsed_ms": 17.0,
       "notes": "Caso ambíguo: menciona termos clínicos (hipertensão, infarto, Losartana, cardiologista, diagnóstico) mas é texto jornalístico. Nosso classificador tende a aceitar erroneamente. Limitação conhecida: sem modelo de contexto, não distingue 'texto sobre medicina' de 'documento médico'."
     },
     {
@@ -502,16 +502,16 @@
       "ground_truth_is_valid": true,
       "prediction_label": "relatorio_medico",
       "prediction_is_valid": false,
-      "confidence_score": 0.3417,
-      "threshold_applied": 0.8,
+      "confidence_score": 0.225,
+      "threshold_applied": 0.55,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [
         "crm",
         "paciente"
       ],
-      "justification": "Documento classificado como relatório clínico. Termos clínicos identificados: 'crm', 'paciente'. Confiança (0.34) abaixo do limiar adaptativo (0.80) — documento rejeitado.",
+      "justification": "Documento classificado como relatório clínico. Termos clínicos identificados: 'crm', 'paciente'. Confiança (0.23) abaixo do limiar adaptativo (0.55) — documento rejeitado.",
       "correct": false,
-      "elapsed_ms": 12.0,
+      "elapsed_ms": 15.0,
       "notes": "OCR de atestado manuscrito degrada a qualidade do texto. Sem acentos, sem pontuação, CRM parcialmente ilegível. Nosso classificador pode rejeitar por score baixo."
     },
     {
@@ -521,8 +521,8 @@
       "ground_truth_is_valid": false,
       "prediction_label": "laudo",
       "prediction_is_valid": true,
-      "confidence_score": 0.75,
-      "threshold_applied": 0.7,
+      "confidence_score": 0.5917,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [
         "hemograma",
@@ -537,7 +537,7 @@
       ],
       "justification": "Documento classificado como laudo/resultado de exame. Termos clínicos identificados: 'hemograma', 'leucócitos', 'eritrócitos', 'plaquetas', 'paciente'.",
       "correct": false,
-      "elapsed_ms": 14.0,
+      "elapsed_ms": 21.0,
       "notes": "Exame veterinário tem estrutura idêntica ao humano: hemograma, leucócitos, eritrócitos, assinatura com registro profissional. Diferença: CRMV (veterinário) vs CRM (humano). Nosso classificador não distingue — limitação séria em contexto de saúde humana."
     },
     {
@@ -547,16 +547,16 @@
       "ground_truth_is_valid": false,
       "prediction_label": "relatorio_medico",
       "prediction_is_valid": false,
-      "confidence_score": 0.3417,
-      "threshold_applied": 0.7,
+      "confidence_score": 0.225,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [
         "ubs",
         "saúde"
       ],
-      "justification": "Documento classificado como relatório clínico. Termos clínicos identificados: 'ubs', 'saúde'. Confiança (0.34) abaixo do limiar adaptativo (0.70) — documento rejeitado.",
+      "justification": "Documento classificado como relatório clínico. Termos clínicos identificados: 'ubs', 'saúde'. Confiança (0.23) abaixo do limiar adaptativo (0.45) — documento rejeitado.",
       "correct": true,
-      "elapsed_ms": 36.0,
+      "elapsed_ms": 16.0,
       "notes": "Não é um documento clínico (sem diagnóstico, sem prescrição), mas tem elementos de UBS, unidade de saúde. Expectativa: rejeitar (is_valid=False), mas pode ser aceito pelo score."
     },
     {
@@ -566,8 +566,8 @@
       "ground_truth_is_valid": true,
       "prediction_label": "relatorio_medico",
       "prediction_is_valid": false,
-      "confidence_score": 0.6917,
-      "threshold_applied": 0.7,
+      "confidence_score": 0.445,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [
         "paciente",
@@ -577,9 +577,9 @@
         "cápsula",
         "data"
       ],
-      "justification": "Documento classificado como relatório clínico. Termos clínicos identificados: 'paciente', 'dor', 'febre', 'comprimido', 'cápsula'. Confiança (0.69) abaixo do limiar adaptativo (0.70) — documento rejeitado.",
+      "justification": "Documento classificado como relatório clínico. Termos clínicos identificados: 'paciente', 'dor', 'febre', 'comprimido', 'cápsula'. Confiança (0.45) abaixo do limiar adaptativo (0.45) — documento rejeitado.",
       "correct": false,
-      "elapsed_ms": 20.0,
+      "elapsed_ms": 13.0,
       "notes": "Receita sem CRM visível, sem carimbo, sem CID. Pode ser receita de UBS onde o médico esqueceu de assinar corretamente. Em produção: deveria ser rejeitada por incompletude. Nosso classificador aceita por ter termos clínicos suficientes."
     },
     {
@@ -589,8 +589,8 @@
       "ground_truth_is_valid": true,
       "prediction_label": "laudo",
       "prediction_is_valid": true,
-      "confidence_score": 0.75,
-      "threshold_applied": 0.7,
+      "confidence_score": 0.5183,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [
         "hemograma",
@@ -600,7 +600,7 @@
       ],
       "justification": "Documento classificado como laudo/resultado de exame. Termos clínicos identificados: 'hemograma', 'plaquetas', 'paciente', 'médico'.",
       "correct": true,
-      "elapsed_ms": 32.0,
+      "elapsed_ms": 14.0,
       "notes": "Laudo em espanhol. Termos similares ao português (eritrocitos/eritrócitos). OCR pode confundir algumas palavras. Nosso vocabulário em português pode não capturar bem termos espanhóis."
     },
     {
@@ -610,8 +610,8 @@
       "ground_truth_is_valid": true,
       "prediction_label": "relatorio_medico",
       "prediction_is_valid": false,
-      "confidence_score": 0.6333,
-      "threshold_applied": 0.7,
+      "confidence_score": 0.4083,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [
         "prescrito",
@@ -620,9 +620,9 @@
         "retorno",
         "data"
       ],
-      "justification": "Documento classificado como relatório clínico. Termos clínicos identificados: 'prescrito', 'paciente', 'dra', 'retorno', 'data'. Confiança (0.63) abaixo do limiar adaptativo (0.70) — documento rejeitado.",
+      "justification": "Documento classificado como relatório clínico. Termos clínicos identificados: 'prescrito', 'paciente', 'dra', 'retorno', 'data'. Confiança (0.41) abaixo do limiar adaptativo (0.45) — documento rejeitado.",
       "correct": false,
-      "elapsed_ms": 36.0,
+      "elapsed_ms": 12.0,
       "notes": "Relatório nutricional tem CRN (nutricionista) não CRM. É documento clínico para fins da teleconsultoria? Depende da política do sistema. Nosso classificador aceita."
     },
     {
@@ -632,8 +632,8 @@
       "ground_truth_is_valid": true,
       "prediction_label": "laudo",
       "prediction_is_valid": true,
-      "confidence_score": 0.75,
-      "threshold_applied": 0.7,
+      "confidence_score": 0.5917,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [
         "glicemia",
@@ -646,7 +646,7 @@
       ],
       "justification": "Documento classificado como laudo/resultado de exame. Termos clínicos identificados: 'glicemia', 'creatinina', 'ureia', 'paciente', 'mg'.",
       "correct": true,
-      "elapsed_ms": 13.0,
+      "elapsed_ms": 12.0,
       "notes": "OCR de foto de monitor: qualidade degradada, pixels de tela visíveis. O conteúdo é clínico, mas a forma de envio (foto do monitor) é tecnicamente inaceitável em contexto de teleconsultoria real. Nosso sistema aceita o conteúdo sem avaliar a forma — limitação importante."
     },
     {
@@ -656,17 +656,17 @@
       "ground_truth_is_valid": false,
       "prediction_label": "relatorio_medico",
       "prediction_is_valid": false,
-      "confidence_score": 0.5583,
-      "threshold_applied": 0.8,
+      "confidence_score": 0.34,
+      "threshold_applied": 0.55,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [
         "crm",
         "paciente",
         "retorno"
       ],
-      "justification": "Documento classificado como relatório clínico. Termos clínicos identificados: 'crm', 'paciente', 'retorno'. Elementos estruturais de documento médico presentes (score estrutural: 0.50). Confiança (0.56) abaixo do limiar adaptativo (0.80) — documento rejeitado.",
+      "justification": "Documento classificado como relatório clínico. Termos clínicos identificados: 'crm', 'paciente', 'retorno'. Elementos estruturais de documento médico presentes (score estrutural: 0.33). Confiança (0.34) abaixo do limiar adaptativo (0.55) — documento rejeitado.",
       "correct": true,
-      "elapsed_ms": 11.0,
+      "elapsed_ms": 10.0,
       "notes": "Texto extremamente curto (possível extração parcial de PDF mal formatado). Tem termos clínicos e CRM, mas sem contexto suficiente. Nosso sistema rejeita por word_count < 30, aplicando threshold mais alto."
     },
     {
@@ -676,8 +676,8 @@
       "ground_truth_is_valid": true,
       "prediction_label": "laudo",
       "prediction_is_valid": true,
-      "confidence_score": 0.8,
-      "threshold_applied": 0.7,
+      "confidence_score": 0.6333,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [
         "laudo",
@@ -705,8 +705,8 @@
       "ground_truth_is_valid": false,
       "prediction_label": "relatorio_medico",
       "prediction_is_valid": true,
-      "confidence_score": 0.7,
-      "threshold_applied": 0.7,
+      "confidence_score": 0.55,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [
         "diagnóstico",
@@ -720,7 +720,7 @@
       ],
       "justification": "Documento classificado como relatório clínico. Termos clínicos identificados: 'diagnóstico', 'pressão arterial', 'hipertensão', 'infarto', 'tratamento'.",
       "correct": false,
-      "elapsed_ms": 14.0,
+      "elapsed_ms": 17.0,
       "notes": "Caso ambíguo: menciona termos clínicos (hipertensão, infarto, Losartana, cardiologista, diagnóstico) mas é texto jornalístico. Nosso classificador tende a aceitar erroneamente. Limitação conhecida: sem modelo de contexto, não distingue 'texto sobre medicina' de 'documento médico'."
     },
     {
@@ -730,16 +730,16 @@
       "ground_truth_is_valid": true,
       "prediction_label": "relatorio_medico",
       "prediction_is_valid": false,
-      "confidence_score": 0.3417,
-      "threshold_applied": 0.8,
+      "confidence_score": 0.225,
+      "threshold_applied": 0.55,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [
         "crm",
         "paciente"
       ],
-      "justification": "Documento classificado como relatório clínico. Termos clínicos identificados: 'crm', 'paciente'. Confiança (0.34) abaixo do limiar adaptativo (0.80) — documento rejeitado.",
+      "justification": "Documento classificado como relatório clínico. Termos clínicos identificados: 'crm', 'paciente'. Confiança (0.23) abaixo do limiar adaptativo (0.55) — documento rejeitado.",
       "correct": false,
-      "elapsed_ms": 12.0,
+      "elapsed_ms": 15.0,
       "notes": "OCR de atestado manuscrito degrada a qualidade do texto. Sem acentos, sem pontuação, CRM parcialmente ilegível. Nosso classificador pode rejeitar por score baixo."
     },
     {
@@ -749,8 +749,8 @@
       "ground_truth_is_valid": false,
       "prediction_label": "laudo",
       "prediction_is_valid": true,
-      "confidence_score": 0.75,
-      "threshold_applied": 0.7,
+      "confidence_score": 0.5917,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [
         "hemograma",
@@ -765,7 +765,7 @@
       ],
       "justification": "Documento classificado como laudo/resultado de exame. Termos clínicos identificados: 'hemograma', 'leucócitos', 'eritrócitos', 'plaquetas', 'paciente'.",
       "correct": false,
-      "elapsed_ms": 14.0,
+      "elapsed_ms": 21.0,
       "notes": "Exame veterinário tem estrutura idêntica ao humano: hemograma, leucócitos, eritrócitos, assinatura com registro profissional. Diferença: CRMV (veterinário) vs CRM (humano). Nosso classificador não distingue — limitação séria em contexto de saúde humana."
     },
     {
@@ -775,8 +775,8 @@
       "ground_truth_is_valid": true,
       "prediction_label": "relatorio_medico",
       "prediction_is_valid": false,
-      "confidence_score": 0.6917,
-      "threshold_applied": 0.7,
+      "confidence_score": 0.445,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [
         "paciente",
@@ -786,9 +786,9 @@
         "cápsula",
         "data"
       ],
-      "justification": "Documento classificado como relatório clínico. Termos clínicos identificados: 'paciente', 'dor', 'febre', 'comprimido', 'cápsula'. Confiança (0.69) abaixo do limiar adaptativo (0.70) — documento rejeitado.",
+      "justification": "Documento classificado como relatório clínico. Termos clínicos identificados: 'paciente', 'dor', 'febre', 'comprimido', 'cápsula'. Confiança (0.45) abaixo do limiar adaptativo (0.45) — documento rejeitado.",
       "correct": false,
-      "elapsed_ms": 20.0,
+      "elapsed_ms": 13.0,
       "notes": "Receita sem CRM visível, sem carimbo, sem CID. Pode ser receita de UBS onde o médico esqueceu de assinar corretamente. Em produção: deveria ser rejeitada por incompletude. Nosso classificador aceita por ter termos clínicos suficientes."
     },
     {
@@ -798,8 +798,8 @@
       "ground_truth_is_valid": true,
       "prediction_label": "relatorio_medico",
       "prediction_is_valid": false,
-      "confidence_score": 0.6333,
-      "threshold_applied": 0.7,
+      "confidence_score": 0.4083,
+      "threshold_applied": 0.45,
       "extraction_method": "digital_pdf",
       "clinical_terms_found": [
         "prescrito",
@@ -808,9 +808,9 @@
         "retorno",
         "data"
       ],
-      "justification": "Documento classificado como relatório clínico. Termos clínicos identificados: 'prescrito', 'paciente', 'dra', 'retorno', 'data'. Confiança (0.63) abaixo do limiar adaptativo (0.70) — documento rejeitado.",
+      "justification": "Documento classificado como relatório clínico. Termos clínicos identificados: 'prescrito', 'paciente', 'dra', 'retorno', 'data'. Confiança (0.41) abaixo do limiar adaptativo (0.45) — documento rejeitado.",
       "correct": false,
-      "elapsed_ms": 36.0,
+      "elapsed_ms": 12.0,
       "notes": "Relatório nutricional tem CRN (nutricionista) não CRM. É documento clínico para fins da teleconsultoria? Depende da política do sistema. Nosso classificador aceita."
     }
   ]

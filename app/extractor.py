@@ -14,7 +14,7 @@ try:
 except ImportError:
     _FITZ_AVAILABLE = False
 
-# Singleton para otimizar performance: carrega o modelo de IA uma única vez
+# Singleton para otimizar performance: faz o modelo de IA ccarregar uma única vez
 _ocr_engine = None
 
 def _get_ocr_engine():

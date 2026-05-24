@@ -19,9 +19,6 @@ Critério de seleção dos casos de borda (ambíguos):
   - Laudo de exame de outra língua (espanhol — OCR pode confundir)
   - PDF corrompido com texto parcial
 
-Por que casos ambíguos são mais importantes que os outros 20:
-  O edital explicita que a análise dos erros em casos ambíguos revela mais
-  sobre as limitações da abordagem do que a acurácia bruta.
 """
 
 import json
@@ -667,8 +664,6 @@ def create_pdf(text: str, output_path: Path) -> None:
     # Converte o texto inteiro de uma vez para latin-1
     safe_text = text.encode("latin-1", errors="replace").decode("latin-1")
     
-    # O método write() é muito mais seguro que o multi_cell() para 
-    # textos brutos, pois não entra em pânico com "palavras" inquebráveis.
     pdf.write(6, safe_text)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)

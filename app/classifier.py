@@ -22,7 +22,14 @@ Por que a abordagem de vocabulário é honesta e adequada aqui:
     ser clínicos (ex: artigo jornalístico sobre saúde). Documentado na análise
     crítica.
 
+Versão de produção recomendada:
+  Fine-tuned BERTimbau (BERT pré-treinado em português) com dataset rotulado
+  de documentos reais da plataforma V4H. Threshold calibrado em validation set
+  com atenção ao custo assimétrico de FP vs FN.
+
 ─── ESTRUTURA DO SCORE ─────────────────────────────────────────────────────
+
+  score_final = (0.55 × score_clinico) + (0.25 × score_estrutural) − (0.20 × penalty)
 
   score_clinico  = soma ponderada de termos clínicos encontrados (normalizada)
   score_estrutural = presença de elementos estruturais (CRM, data, assinatura etc.)
@@ -164,13 +171,13 @@ class ClinicalDocumentClassifier:
     """
 
     # Pesos da fusão
-    _W_CLINICAL    = 0.70
-    _W_STRUCTURAL  = 0.30
-    _W_NEGATIVE    = 0.30   # peso da penalidade
+    _W_CLINICAL    = 0.55
+    _W_STRUCTURAL  = 0.25
+    _W_NEGATIVE    = 0.20   # peso da penalidade
 
     # Normalização: score_clinico_raw é dividido por este valor
     # para mapear para [0, 1]. Ajustado empiricamente.
-    _CLINICAL_NORM = 12.0
+    _CLINICAL_NORM = 15.0
 
     def classify(self, text: str, word_count: int) -> ClassificationResult:
         """
@@ -254,8 +261,10 @@ class ClinicalDocumentClassifier:
             "registro_profissional": bool(re.search(
                 r"\b(crm|crf|coren)\s*[:\-]?\s*\d{4,8}", text
             )),
+            # BUG CORRIGIDO: estava usando regex de CRM aqui por engano (copy-paste).
+            # Regex correto detecta datas no formato dd/mm/aaaa, dd-mm-aaaa, dd.mm.aa etc.
             "data_formatada": bool(re.search(
-                r"\b(crm|crf|coren)[a-z\-\/]*\s*[:\-]?\s*\d{4,8}", text
+                r"\b\d{1,2}[\/\-\.]\d{1,2}[\/\-\.]\d{2,4}\b", text
             )),
             "codigo_cid": bool(re.search(
                 r"\bcid\b.{0,20}[a-z]\d{2}", text

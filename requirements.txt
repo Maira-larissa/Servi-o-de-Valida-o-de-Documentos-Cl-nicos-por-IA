@@ -14,8 +14,10 @@ python-dotenv>=1.0.1
 PyMuPDF>=1.24.3
 
 # ── OCR (PDFs escaneados e imagens) ───────────────────────────────────────
-# OCR 100% Python via ONNX Runtime, sem dependências de sistema
-easyocr>=1.7.0
+# RapidOCR via ONNX Runtime: 100% Python, sem dependências de sistema 
+# Funciona em Windows / macOS / Linux sem instalação extra além do pip.
+rapidocr_onnxruntime>=1.3.0
+onnxruntime>=1.17.0
 Pillow>=10.3.0
 
 # ── Geração do dataset ─────────────────────────────────────────────────────

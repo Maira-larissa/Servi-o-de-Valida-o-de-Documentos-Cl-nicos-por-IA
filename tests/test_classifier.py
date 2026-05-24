@@ -6,7 +6,7 @@ Rodados com: pytest tests/ -v
 Filosofia: documentar hipóteses de onde o modelo DEVE falhar antes
 de executar (ML testing sistemático — bonus do edital).
 
-Cada teste tem um comentário "Hipótese" explicando o que esperamos
+Cada teste tem um comentário "Hipótese" explicando o que espero
 e "Limitação conhecida" onde aplicável.
 """
 

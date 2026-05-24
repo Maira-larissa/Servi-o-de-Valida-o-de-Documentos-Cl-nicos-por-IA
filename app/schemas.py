@@ -1,5 +1,4 @@
 """
-Contrato da API — definido ANTES da implementação.
 
 Decisão de design: usar Pydantic v2 para validação automática.
 Todos os campos foram pensados para que o módulo Fullstack (P01)
@@ -52,7 +51,7 @@ class ClassificationResponse(BaseModel):
       - justification    : texto legível explicando a decisão
       - threshold_applied: limiar efetivamente usado na decisão
 
-    Campos extras (enriquecem a integração Fullstack):
+    Campos extras (pensando na integração com Fullstack):
       - clinical_terms_found : termos clínicos que influenciaram a decisão
       - extraction_method    : como o texto foi obtido (transparência)
       - word_count           : palavras extraídas (útil para debug)

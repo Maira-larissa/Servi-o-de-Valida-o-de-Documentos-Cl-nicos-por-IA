@@ -117,8 +117,6 @@ async def validate_document(
         )
 
     # ── 2. Extração de texto ───────────────────────────────────────────
-# ── 2. Extração de texto ───────────────────────────────────────────
-
     file_type = detect_file_type(file.filename or "", file.content_type or "")
 
     if file_type == "pdf":
